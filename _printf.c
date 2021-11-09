@@ -38,5 +38,5 @@ int _printf(char *format, ...)
 		}
 	}
 	va_end(arg);
-	return (i);
+	return (count);
 }
