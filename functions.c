@@ -34,12 +34,10 @@ int print_int(int n)
  *@ch: char
  *Return: char
  */
-int print_char(char *ch)
+int print_char(va_list arg)
 {
-
-
-	_putchar(ch[0]);
-	return (1);
+		_putchar(va_arg(arg, int));
+			return (1);
 }
 /**
  *print_string - function tthat print an sttring
