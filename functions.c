@@ -31,7 +31,7 @@ int print_int(int n)
 }
 /**
  *print_char - function that print an charactere
- *@ch: char
+ *@arg: argument
  *Return: char
  */
 int print_char(va_list arg)
