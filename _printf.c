@@ -4,7 +4,7 @@
  *@format: string
  * Return: count
  */
-int _printf(const char *format, ...)
+int _printf(char *format, ...)
 {
 	int i = 0;
 	int count = 0;
