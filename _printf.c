@@ -4,7 +4,7 @@
  *@format: string
  * Return: count
  */
-int _printf(char *format, ...)
+int _printf(const char *format, ...)
 {
 	int i = 0;
 	int count = 0;
@@ -20,6 +20,7 @@ int _printf(char *format, ...)
 			_putchar(format[i]);
 			i++;
 			count++;
+		}
 		else
 		{
 			if (format[i + 1] == 'd' || format[i + 1] == 'i')
