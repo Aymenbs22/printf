@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <stdarg.h>
 #include <stdlib.h>
+int get_func(const char s, va_list i);
 int _putchar(char c);
 int _printf(const char *format, ...);
 int print_int(int n);
