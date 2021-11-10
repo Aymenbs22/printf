@@ -30,9 +30,9 @@ int print_int(int n)
 	return (i);
 }
 /**
- *print_char - function that print an charactere
- *@ch: char
+ *print_char - function that print an character
  *Return: char
+ *@arg: argument
  */
 int print_char(va_list arg)
 {
@@ -47,6 +47,9 @@ int print_char(va_list arg)
 int print_string(char *ch)
 {
 int i = 0;
+
+if (ch == NULL)
+	ch = "(null)";
 while (ch[i] != '\0')
 {
 _putchar(ch[i]);
