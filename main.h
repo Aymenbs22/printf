@@ -12,6 +12,4 @@ int print_int(int n);
 int print_char(va_list arg);
 int print_string(char *ch);
 int print_percent(va_list arg);
-unsigned int to_binary(unsigned int value);
-unsigned int print_unsint(unsigned int n);
 #endif
