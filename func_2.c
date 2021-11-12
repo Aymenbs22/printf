@@ -28,7 +28,7 @@ unsigned int to_binary(unsigned int value)
  *@n: intput
  *Return: length of print caractere
  */
-int print_unsint(unsigned int n)
+unsigned int print_unsint(unsigned int n)
 {
 	unsigned int x;
 	unsigned int i = 0;
