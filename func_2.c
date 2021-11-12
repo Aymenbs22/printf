@@ -11,3 +11,44 @@ int print_percent(va_list arg)
 	_putchar('%');
 	return (1);
 }
+/**
+ *to_binary - convert unsigned int to binary
+ *@value: input
+ * Return: binary
+ */
+unsigned int to_binary(unsigned int value)
+{
+    if (value == 0)
+        return 0;
+    else
+        return (value % 2 + 10 * to_binary(value / 2));
+}
+/**
+ *print_unsint - function that print an unsigned int
+ *@n: intput
+ *Return: length of print caractere
+ */
+int print_unsint(unsigned int n)
+{
+	unsigned int x;
+	int i = 0;
+	int d = 1;
+
+	if (n < 0)
+	{
+		_putchar('-');
+		n = n * -1;
+		i++;
+	}
+	x = n;
+	while ((x / d) > 9)
+		d = d * 10;
+	while (d > 0)
+	{
+	_putchar(x / d + '0');
+		x = x % d;
+		d = d / 10;
+		i++;
+	}
+	return (i);
+}
