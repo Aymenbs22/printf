@@ -30,12 +30,8 @@ int print_int(int n)
 	return (i);
 }
 /**
-<<<<<<< HEAD
- *print_char - function that print an character
-=======
  *print_char - function that print an charactere
- *@arg: argument
->>>>>>> 7b893142ecf1b4b886b0a808c85270aa6cfd4210
+ *@arg: argumet
  *Return: char
  *@arg: argument
  */
