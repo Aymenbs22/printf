@@ -31,15 +31,8 @@ unsigned int to_binary(unsigned int value)
 int print_unsint(unsigned int n)
 {
 	unsigned int x;
-	int i = 0;
-	int d = 1;
-
-	if (n < 0)
-	{
-		_putchar('-');
-		n = n * -1;
-		i++;
-	}
+	unsigned int i = 0;
+	unsigned int d = 1;
 	x = n;
 	while ((x / d) > 9)
 		d = d * 10;
