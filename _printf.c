@@ -31,6 +31,8 @@ int _printf(const char *format, ...)
 				count = count + print_string(va_arg(arg, char *));
 			else if (format[i + 1] == '%')
 				count = count + print_percent(arg);
+			else if (format[i + 1] == 'b')
+				count = count + print_unsint(to_binary(va_arg(arg, unsigned int)));
 			else if (format[i + 1] == '\0')
 				return (-1);
 			else if (format[i + 1] != '%')
